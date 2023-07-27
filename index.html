@@ -38,7 +38,7 @@
     </style>
 </head>
 
-<body class="font-lato w-[80%] mx-auto">
+<body class="font-lato w-[90%] mx-auto">
     <header class="container mx-auto  lg:mx-auto">
         <nav class="py-6">
             <div class="navbar bg-[#F85559] rounded-full">
@@ -67,7 +67,7 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end w-auto bg-white rounded-full p-2 ">
+                <div class="navbar-end w-auto bg-white rounded-full p-2 hidden lg:block">
                     <input class="border-none ml-2" type="text" placeholder="search here">
                     <i class="fa-solid fa-magnifying-glass pr-2"></i>
 
@@ -75,11 +75,11 @@
             </div>
         </nav>
         <section class="container mx-auto">
-            <div class="carousel w-full h-[600px]">
+            <div class="carousel w-full lg:h-[600px] rounded-lg">
 
                 <!-- slider 1  -->
                 <div id="slide1" class="carousel-item relative w-full">
-                    <div class="hero" style="background-image: url(./images/banner1.png);">
+                    <div class="hero min-h-(calc[100vh-70px])" style="background-image: url(./images/banner1.png);">
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div class="max-w-md">
@@ -150,9 +150,9 @@
         </section>
         <!-- fruits section-->
 
-        <section class="lg:none">
+        <section class="hidden lg:block -mt-20 relative ">
             <div
-                class="flex space-x-2 items-center text-center justify-center bg-amber-100 w-[80%] mx-auto gap-10 p-7 ">
+                class="flex space-x-2 items-center text-center justify-center bg-white w-[80%] mx-auto gap-10 p-7 shadow-lg flex-1 rounded-xl">
                 <div>
                     <img src="images/fruit1.png" alt="">
                     <p>Strabery</p>
@@ -177,115 +177,202 @@
         </section>
 
     </header>
-    <main class="container mx-auto mt-10 lg:container lg:mx-auto ">
-        <section class="flex flex-col lg:flex-row  ">
-            <div class="justify-start">
-                <h2 class="font-bold text-4xl pb-3">Deal the day</h2>
-                <p class="font-normal max-w-[600px]">Contrary to popular belief, is not simply random text. It has roots
-                    in a
-                    piece of classical
-                    Latin
-                    literature from 45 BC, making it over 2000 years old.</p>
+    <!-- Deal the day section  -->
+    <main class="container mx-auto mt-20 lg:container lg:mx-auto">
+        <section class="">
+            <div class="flex flex-col lg:flex-row  justify-between">
+                <div class="justify-center">
+                    <h2 class="font-bold text-5xl pb-3">Deal the day</h2>
+                    <p class="font-normal max-w-[600px]">Contrary to popular belief, is not simply random text. It has
+                        roots
+                        in a
+                        piece of classical
+                        Latin
+                        literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="flex gap-5 max-w-lg mx-3 lg:mx-20">
+                    <div class="text-center justify-center flex gap-4">
+                        <div class="mb-6">
+                            <h3 class="text-5xl font-extrabold mb-6">29</h3>
+                            <p>Days</p>
+
+                        </div>
+                        <i class="mt-2 text-2xl fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="  text-center justify-center flex gap-4">
+                        <div class="mb-6">
+                            <h3 class="text-5xl font-extrabold mb-6">15</h3>
+                            <p>Hours</p>
+
+                        </div>
+                        <i class="mt-2 text-2xl fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="  text-center justify-center flex gap-5">
+                        <div class="mb-6">
+                            <h3 class="text-5xl font-extrabold mb-6">25</h3>
+                            <p>minutes</p>
+
+                        </div>
+                        <i class="mt-2 text-2xl fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class=" text-center justify-center flex gap-5">
+                        <div>
+                            <h3 class="text-5xl font-extrabold mb-6">08</h3>
+                            <p>Seconds</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
             </div>
-            <div class="flex  gap-5  justify-end  max-w-lg">
-                <div class="text-right justify-center flex gap-4">
-                    <div class="mb-6">
-                        <h3 class="text-5xl font-extrabold mb-6">29</h3>
-                        <p>Days</p>
 
+            <!-- cards  section -->
+
+            <!-- card 1  -->
+            <div class="flex flex-col lg:flex-row lg: m-3 gap-5">
+                <!-- card 1  -->
+                <div class="card w-full bg-base-100 shadow-xl px-7">
+                    <figure class="px-7 pt-10">
+                        <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center gap-y-7">
+                        <h2 class="card-title text-xl">$12.50 - 30.20$</h2>
+
+                        <p>Apple</p>
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class=" bg-white text-red-400">Details</button>
+                        </div>
                     </div>
-                    <i class="mt-2 text-2xl fa-solid fa-ellipsis-vertical"></i>
                 </div>
-                <div class="  text-center justify-center flex gap-4">
-                    <div class="mb-6">
-                        <h3 class="text-5xl font-extrabold mb-6">15</h3>
-                        <p>Hours</p>
+                <!-- card 2  -->
+                <div class="card w-full bg-base-100 shadow-xl px-7">
+                    <figure class="px-7 pt-10">
+                        <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center gap-y-7">
+                        <h2 class="card-title text-xl">$12.50 - 30.20$</h2>
 
+                        <p>Apple</p>
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="  bg-white text-red-400">Details</button>
+                        </div>
                     </div>
-                    <i class="mt-2 text-2xl fa-solid fa-ellipsis-vertical"></i>
                 </div>
-                <div class="  text-center justify-center flex gap-5">
-                    <div class="mb-6">
-                        <h3 class="text-5xl font-extrabold mb-6">25</h3>
-                        <p>minutes</p>
+                <!-- card 1  -->
+                <div class="card w-full bg-base-100 shadow-xl px-7">
+                    <figure class="px-7 pt-10">
+                        <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center gap-y-7">
+                        <h2 class="card-title text-xl">$12.50 - 30.20$</h2>
 
+                        <p>Apple</p>
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="  bg-white text-red-400">Details</button>
+                        </div>
                     </div>
-                    <i class="mt-2 text-2xl fa-solid fa-ellipsis-vertical"></i>
                 </div>
-                <div class=" text-center justify-center flex gap-5">
-                    <div>
-                        <h3 class="text-5xl font-extrabold mb-6">08</h3>
-                        <p>Seconds</p>
+                <!-- card 1  -->
+                <div class="card w-full bg-base-100 shadow-xl px-7">
+                    <figure class="px-7 pt-10">
+                        <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center gap-y-7">
+                        <h2 class="card-title">$12.50 - 30.20$</h2>
 
+                        <p>Apple</p>
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+                            <dialog id="my_modal_1" class="modal">
+                                <form method="dialog" class="modal-box">
+                                    <h3 class="font-bold text-lg">Hello!</h3>
+                                    <p class="py-4">Press ESC key or click the button below to close</p>
+                                    <div class="modal-action">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn">Close</button>
+                                    </div>
+                                </form>
+                            </dialog>
+                        </div>
                     </div>
-
                 </div>
+
 
             </div>
+            <div class="flex justify-center my-20"><button class="btn 
+                 items-center justify-center ">Shop
+                    all</button></div>
         </section>
-
     </main>
-    <footer class="p-5">
 
-    </footer>
 </body>
-<!-- <nav class="py-12">
-      <div class="navbar bg-[#F85559] rounded-full p-4">
-        <div class="navbar-start">
-            <div class="dropdown">
-                <ul class=" flex lg:flex m-auto gap-7 text-white font-medium">
-                    <li><a>Home</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>
-                </ul>
-            </div>
+<footer class="h-[400px] bg-[#121212] w-full">
+
+    <div class="text-white justify-center pt-20 ">
+        <div class="flex items-center text-center justify-center gap-4 mb-6">
+            <img class="h-15" src="images/logo.png" alt="">
+            <h2 class="text-5xl">Fruit Burst</h2>
         </div>
-        <div class="navbar-center">
-            <img class="h-10 justify-center align-center" src="images/logo.png" alt="">
-            <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+
+        <div class="mb-12">
+            <ul class="flex flex-col-3 lg:flex-row justify-center gap-x-10 ">
+                <li>Home</li>
+                <li>About Us </li>
+                <li>Shop</li>
+                <li>ALl fruits</li>
+                <li>Support</li>
+                <li>My Accout</li>
+            </ul>
         </div>
-        <div class=" ">
-            <button class="btn btn-ghost btn-circle flex">
-                <div class="flex  bg-white">
-                    <div>
-                        <input class="p-3" type="text" placeholder="search here">
-
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-
-                    </div>
-
-                </div>
-            </button>
-
-        </div>
-    </div> -->
-<!-- </nav>   -->
-<!-- <nav class="bg-red-500 h-20 w-full fixed rounded-full container mx-auto">
-
-        <input type="checkbox" id="check" hidden>
-        <label for="check" class="float-right text-white text-3xl leading-[80px] mr-10 lg:hidden">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-
-        <label class="text-white leading-[80px] md:leading-[80px] pl-12 md:pl-24 md:text-4xl text-3xl">
-            Fruit Burst
-        </label>
-        <input class="pl-3 pt-2 rounded-full" type="text" placeholder="search here">
-        <ul class="float-right mr-10 lg:flex leading-[80px] space-x-4 text-black rounded fixed lg:relative h-[100vh] lg:h-0 w-[100%] lg:w-fit top-20 lg:top-0 left-0[-100%] lg:left-0 transition-all duration-300 lg:transition-none text-center bg-red-500
-            ">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">support</a></li>
-
+        <ul class="flex justify-center gap-x-6 text-3xl">
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-apple"></i></li>
         </ul>
-        <label class=" " for="">
-            <input type="text" placeholder="write here">
-        </label> -->
-
-<!-- slider  -->
+    </div>
+</footer>
 
 </html>
